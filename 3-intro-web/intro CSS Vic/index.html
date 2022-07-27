@@ -1,29 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Intro CSS clase victor</title>
-    <script src=""></script>
+    </style><link rel="stylesheet" href="style.css"> 
+    </style><link rel="stylesheet" href="selector.css"> 
+
+    
     <style type="text/css" media="all">
         *{
             font-size: 1rem;
-        } <!--este es un selector universal, significa que afecta a todo el body-->
+        } 
     p{color: brown;}   
-    </style><!-- <link rel="stylesheet" href="style.css"> -->
-p.aviso {
-    color: blue
+
+    div.nuevo{
+    color: rgba(red, green, blue, alpha)
 }
+
+    <style>
+        p#alm1{
+            color:aquamarine
+        }
+    </style>
+
+    <style>
+        *#alm3{
+            color: dimgrey;
+        }
+    </style>
+
 </head>
 <body>
-    <h1 style="color:rgb(64, 2, 179);">Esto es una prueba</h1>
-    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta, et minima atque, quasi reprehenderit laborum quis nobis saepe praesentium magni quae ipsum nulla beatae eos, expedita harum aspernatur. Praesentium, porro!
-
-    <p class="aviso">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, sint animi officia reprehenderit nesciunt earum, quasi labore dolor nemo perferendis laboriosam accusamus itaque, ipsum eaque in culpa? Vitae, aspernatur repudiandae.
-    </p>
+    <p>Esto es un parrafo</p>
     <div>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit alias hic quos commodi, minus corrupti placeat dolorem cum officia nulla enim eaque aliquam, incidunt fugiat possimus reprehenderit animi! Repellendus, sequi?
+        <li>
+            Esto es una lista 
+            <p>Esto es otro parrafo interno</p>
+        </li>
+        <ul>
+            <p>Esto es otro parrafo 3</p>
+        </ul>
+    </div> <br><br>
+
+    <p id="alm1">
+        Párrafo 1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit magni dignissimos quae mollitia laudantium dolor, rem sequi, consequatur quia obcaecati voluptatibus in exercitationem libero aspernatur esse optio? Asperiores, amet totam.
+    </p>
+    <h1>Esto es una prueba</h1>
+    <p> Párrafo 2 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta, et minima atque, quasi reprehenderit laborum quis nobis saepe praesentium magni quae ipsum nulla beatae eos, expedita harum aspernatur. Praesentium, porro! </p>
+
+
+    <p>Párrafo 3. Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, sint animi officia reprehenderit nesciunt earum, quasi labore dolor nemo perferendis laboriosam accusamus itaque, ipsum eaque in culpa? Vitae, aspernatur repudiandae.
+    </p>
+    <div class="nuevo">
+        Párrafo 4. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit alias hic quos commodi, minus corrupti placeat dolorem cum officia nulla enim eaque aliquam, incidunt fugiat possimus reprehenderit animi! Repellendus, sequi?
     </div>
+
+<p>Párrafo 5. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit iusto fugit minus beatae necessitatibus, nobis reiciendis, error provident fuga ullam iste? Voluptatibus, aliquam doloribus! Quae obcaecati veniam magni corporis iusto!</p>
+
 </body>
 </html>

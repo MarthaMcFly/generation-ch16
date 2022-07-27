@@ -1,0 +1,43 @@
+ul {
+    list-style-type: square;
+}
+ol {
+    list-style:decimal;
+}
+
+/* .sub {
+    border: 1px dotted red;
+} 
+
+ul > ol > li {
+    border: 1px dotted red;
+}*/
+
+h1 {
+    background-color: aquamarine;
+    width: fit-content;
+}
+
+div {
+    display: inline-block;
+   background-color: burlywood;
+    width: 200px;
+}
+
+a {
+    display: inline-block; /* inline-block sirve para que se acomode en linea y bloque simultaneamente */
+    background-color: aqua;
+    width: 200px;
+    height: 400px;
+    border: 1px solid red;
+}
+
+span {
+    font-size: large;
+    font-family: cursive;
+    font-weight: 700;
+    border: 1px dashed blue;
+}
+
+
+
