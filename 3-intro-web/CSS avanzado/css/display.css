@@ -1,0 +1,79 @@
+.cuadro-padre{
+    background-color: blanchedalmond;
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+    
+}
+
+
+
+.cuadro {
+    background-color: cornflowerblue;
+    height: 150px;
+    width: 150px;
+    padding: 50px 40px 30px 20px;
+    border: 10px solid rgb(60, 0, 255);
+    margin: 20px 40px;
+    border-radius: 10px 20px 30px 40px;   
+}
+
+.el-1{
+    background-color: rgb(244, 114, 22);
+    align-self: flex-start;
+    flex-grow: 5;
+}
+
+.el-2{
+    background-color: rgb(30, 210, 87);
+    position: sticky;
+    top: 0;
+    align-self: center;
+    flex-grow: 1;
+}
+
+.el-3{
+    background-color: rgb(218, 94, 225);
+    align-self: flex-end;
+    flex-grow: 3;
+}
+
+.el-4{
+    background-color: rgb(30, 144, 210);
+    position: static;
+    align-self: center;
+    flex-grow: 1;
+    
+}
+
+.el-5{
+    background-color: rgb(210, 30, 30);
+    position: static;
+    flex-grow: 1;
+
+}
+
+.el-6{
+    background-color: rgb(30, 168, 210);
+    position: static;
+}
+
+
+
+/*Introducción a Bootstrap: sirve para programar contenedores*//* El contenedor regula el espacio del margen de la pagina */
+
+.contenedor {
+    height: 200px;
+    background-color:rgb(125, 238, 232);
+    max-width: 1300px;
+    margin: auto auto;
+}
+
+.fila {
+display: flex;
+}
+.columna{
+    flex-grow: 1;
+}

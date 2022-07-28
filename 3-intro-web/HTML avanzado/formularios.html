@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/formularios.css">
+    <link rel="stylesheet" href="https://cdnjs.com/libraries/font-awesome">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1>Formularios</h1>
+    
+    <form>
+        <div class="campo">
+            <label for="nombre">Nombre</label> <!--label se utiliza para darle una descripción al formulario-->
+            <input type="text" placeholder="Luisito" name="nombre" id="nombre">
+        </div>
+        
+        <div class="campo">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email"
+            placeholder="luisito@gmail.com" required>
+        </div>
+
+        <div class="campo">
+            <label for="color">color</label>
+            <input type="color" name="color" id="color">
+        </div>
+
+        <div class="campo">
+            <label for="number">Numero</label>
+            <input type="number" name="number" id="number" min="10" max="20" step="4">
+        </div>
+        <div class="campo">
+            <label for="date">Fecha</label>
+            <input type="date" name="date" id="date">
+        </div>
+        <div class="campo">
+            <label for="file">Archivo</label>
+            <input type="file" name="file" id="file">
+        </div>
+
+        <div class="campo">
+            <label for="range">Rang</label>
+            <input type="range" name="range" id="range" min="10" max="20" step="4">
+        </div>
+        
+        <div class="campo">
+            <label for="password">Contraseña</label>
+            <input type="password" name="password" id="password">
+        </div>
+        
+        <div class="campo">
+            <label for="radio">radio</label>
+            <input type="radio" name="radio" id="radio">
+        </div>
+        <div class="campo">
+            <label for="checkbox">checkbox</label>
+            <input type="checkbox" name="checkbox" id="checkbox">
+        </div>
+        
+        
+
+        <div class="submit">
+            <input type="submit" value="Enviar">
+        </div>
+
+        <div>
+            <input type="">
+        </div>
+
+        <h3>input de rango con marcas</h3>
+        <div class="campo">
+            <label for="range">Rang</label>
+            <input type="range" list="tickmarks">
+            <datalist id="tickmarks">
+                <option value="0" >
+                <option value="5" >
+                <option value="10" >
+            </datalist>
+        </div>
+
+    </form>
+    <div class="fa-3x">
+        <i class="fa-solid fa-triangle-exclamation fa-fade"></i>
+        <i class="fa-solid fa-skull-crossbones fa-fade"></i>
+        <i class="fa-solid fa-desktop-arrow-down fa-fade"></i>
+        <i class="fa-solid fa-i-cursor fa-fade" style="--fa-animation-duration: 2s; --fa-fade-opacity: 0.6;" ></i>
+    </div>
+    <div class="fa-4x">
+        <i class="fa-solid fa-seedling" data-fa-transform="shrink-8" style="background:MistyRose"></i>
+        <i class="fa-solid fa-seedling" data-fa-transform="shrink-8 up-6" style="background:MistyRose"></i>
+        <i class="fa-solid fa-seedling" data-fa-transform="shrink-8 right-6" style="background:MistyRose"></i>
+        <i class="fa-solid fa-seedling" data-fa-transform="shrink-8 down-6" style="background:MistyRose"></i>
+        <i class="fa-solid fa-seedling" data-fa-transform="shrink-8 left-6" style="background:MistyRose"></i>
+      </div>
+    
+      <div class="fa-3x">
+        <i class="fa-solid fa-triangle-person-digging fa-beat-fade"></i>
+        <i class="fa-solid fa-square-exclamation fa-beat-fade"></i>
+        <i class="fa-solid fa-poo-bolt fa-beat-fade" style="--fa-beat-fade-opacity: 0.1; --fa-beat-fade-scale: 1.25;" ></i>
+        <i class="fa-solid fa-circle-info fa-beat-fade" style="--fa-beat-fade-opacity: 0.67; --fa-beat-fade-scale: 1.075;" ></i>
+      </div>
+      
+
+</body>
+</html>
