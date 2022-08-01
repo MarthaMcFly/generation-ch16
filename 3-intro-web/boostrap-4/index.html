@@ -5,9 +5,73 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Introducción a Bootstrap</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css"> <!-- eSTE NO ESTÁ CREADO -->
 </head>
 <body>
-    <h1>Introducción a Bootstrap</h1>
-    <h2>Esto es un introducción</h2>
+    <!-- <h1>Introducción a Bootstrap</h1>
+        <button class="btn-success">hola </button>-->
+        
+        <div class="container-fluid border">
+            <header class="col-12 bg-primary text-white p-3">               
+                <h2>Esto es un introducción</h2>
+            </header>
+            <nav class="col-12 bg-secondary"> <!-- Este va a ser el menu -->
+                <ul id= menu class="nav row w-100"> <!-- row( ), w(width es para que se amplie al tamaño de la pagina) -->
+                    <li class="col">Inicio</li>
+                    <li class="col">Página 1</li>
+                    <li class="col">Página 2</li>
+                    <li class="col">Página 3</li>
+                    <li class="col">contacto</li>
+                </ul>
+            </nav>
+            <section class="col-12 border"> <!-- Esto es para el contenido -->
+                 <div class="row">
+                        <section class="col-9 border">
+                          <h2>Productos</h2>
+                          <hr>
+                          <div class="items row"> 
+                                <div class="item col-3 bg-primary m-3">
+                                    Producto 1
+                                </div>
+                                <div class="item col-3 bg-secondary m-3">
+                                    Producto 2
+                                </div>
+                                <div class="item col-3 bg-danger m-3">
+                                    Producto 3
+                                </div>
+                                <div class="item col-3 bg-danger m-3">
+                                    Producto 4
+                                </div>
+                                <div class="item col-3 bg-primary m-3">
+                                    Producto 5
+                                </div>
+                                <div class="item col-3 bg-secondary m-3">
+                                    Producto 6
+                                </div>
+                                <div class="item col-3 bg-secondary m-3">
+                                    Producto 7
+                                </div>
+                                <div class="item col-3 bg-danger m-3">
+                                    Producto 8
+                                </div>
+                                <div class="item col-3 bg-primary m-3">
+                                    Producto 9
+                                </div>
+                          </div>
+                        </section>
+                    <aside class="col-3"> <!-- Esta es la barra lateral -->
+                         <h2>Barra lateral</h2>
+                     </aside>
+                 </div>
+            </section>
+            <footer class="col-lg-la bg-info">
+                Esto es un footer
+            </footer>
+
+        </div>
+
+    <script type="text/javascript" src="jquery/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>
