@@ -30,18 +30,22 @@ res = miResta(10, 4);
 console.log("la resta es: " + res);
 
 // 1. Funciòn que arroje mi nombre
-/* function miNombre(a, b, c) {
-        return (a + b + c)
+
+function miNombre(a, b, c) {
+    return (a + b + c);
 }
+let yoMeLlamo = miNombre ("Martha ", "Peña ", "Sotelo")
+console.log("Yo me llamo " + yoMeLlamo);
 
-miNombre(Martha, Peña, Sotelo)
-console.log("Mi nombre es: " + miNombre);
 
- */
-//2. Funciòn que arroje un cociente
 
+
+//2. Función que arroje un cociente
 function division(a, b) {
     return (a / b)
 }
     console.log("El resultado de la división es: " + division(10, 2));
+
+
+
 
