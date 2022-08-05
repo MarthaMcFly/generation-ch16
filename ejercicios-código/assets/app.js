@@ -15,8 +15,9 @@ console.log(carreritas);
 
 //****************************Ejercicio 2. CASA DE CANCER 
 
-/* 
+/* switch{
 let valor1 = prompt("ingresa un dígito en grados celcius", "0");
+
  function Farenheit(a, b, c) {
     return (valor1 * b + c)
 }
@@ -27,8 +28,8 @@ function Kelvin(a, b) {
 }
 let resultado2 = Kelvin(valor1, 273.15 ) + " grados Kelvin";
 alert(resultado1 + resultado2); 
-*/
- 
+}
+ */ 
 
 //**********************Ejercicio 3. CASA DE VIRGOlet payaso = prompt("número de payasos");
 /* 
@@ -46,23 +47,26 @@ let muñeca = prompt("número de muñecas");
     alert(pesoMu);  
 */
  
-//*********************** Ejercicio 4. CASA DE ESCORPIO
+//*********************** Ejercicio 4. CASA DE ESCORPIO-Con un while
 
-/* 
-let nI = prompt("Ingresa un número par adivinar el numero mágico")
-let nm = 335
+let num=Math.floor(Math.random()*100);
 
+
+let nI = prompt("Ingresa un número del 1 al 100 adivinar el numero mágico") //- random para sacar un numero aleatorio
+let nm = 33
+while(nI!==nm && salir!==1){
 if (nI > nm ) {
-    alert("el número que ingresaste es mayor al número mágico");
+    nI = prompt("el número que ingresaste es mayor al número mágico");
 } else if (nI < nm) {
-    alert("El número que ingresaste es menor al número mágico");
-} else if (nI == nm) {
-    alert("Felicidades, adivinaste el número mágico");
-} else {
-    alert ("Juega de nuevo");
+    nI = prompt("El número que ingresaste es menor al número mágico");
 }
- */
+     else {
+    salir=prompt("Ingresa 1 para salir");
+    }
+}
 
+if (nI == nm)
+alert("Felicidades, adivinaste el número mágico");
 //*************************** Ejercicio 5. CASA DE PISCIS
 /* 
 alert("Bienvenido");
