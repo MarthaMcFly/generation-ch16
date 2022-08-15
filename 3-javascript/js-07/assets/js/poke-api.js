@@ -3,7 +3,7 @@
 
 const urlPokemon = "https://pokeapi.co/api/v2/pokemon/"
 
-
+ 
 // --------------ELEMENTOS DEL DOM
 const imgPokemon = document.getElementById("img-pokemon");
 console.log(imgPokemon); //son para comprobar que la imagen que imprime luego se puede borrar
@@ -19,13 +19,14 @@ console.log(formulario);
 
 //  EVENTOS
 
-formularioPokemon.addEventListener('submit', (e) => {
+formulario.addEventListener('submit', (e) => {
     e.preventDefault()
     
     const inputPokemon = document.getElementById("busqueda-pokemon");
     console.log(inputPokemon.value);
 
     const nuevaBusqueda = urlPokemon + inputPokemon.value 
+    console.log(urlPokemon);
     obtenerPokemon(nuevaBusqueda);
     })
 
@@ -33,9 +34,9 @@ formularioPokemon.addEventListener('submit', (e) => {
 // console.log(urlPokemon);
 
 //funciones
-try{
-    
+
 async function obtenerPokemon(url) {
+    try{
     const respuesta = await fetch(url)
     const datos = await respuesta.json()
     
@@ -75,7 +76,7 @@ async function obtenerPokemon(url) {
     
         // console.log(pokemon.tipos);
         let templateTipos = ``
-        pokemon.tipos.forEach((tipo) => {
+        pokemon.tipo.forEach((tipo) => {
             const nombreTipo = tipo.type.name;
             templateTipos += `<li class="list-group-item"> ${nombreTipo} </li>`
         })  
