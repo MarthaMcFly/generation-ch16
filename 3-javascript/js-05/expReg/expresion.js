@@ -11,5 +11,6 @@ let texto3 = "te marqué anoche"
 let buscar1 = /[eo]/;
 console.log(buscar1.test(texto3));
 
-
+let y; 
+console.log(y === null);
 
