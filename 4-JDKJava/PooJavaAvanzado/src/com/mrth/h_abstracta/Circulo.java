@@ -4,7 +4,12 @@ public class Circulo extends FigurasGeometricas{
     private double radio;
     @Override
     public double area() {
-        return Math.PI * Math.pow(0,0);
+        return Math.PI * Math.pow(radio,2);
+    }
+
+    public Circulo(double radio) {
+        super("circulo");
+        this.radio = radio;
     }
 
     public double getRadio() {

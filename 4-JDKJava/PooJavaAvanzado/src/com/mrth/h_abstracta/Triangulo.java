@@ -2,17 +2,24 @@ package com.mrth.h_abstracta;
 
 public class Triangulo extends FigurasGeometricas{
 
+
+
     //Ponemos los datos que vamos a utilizar
     private float base;
     private float altura;
 
-    //ponemos un constructor:
-    public Triangulo(){
-
+    public Triangulo( float base, float altura) {
+        super("triangulo");
+        this.base = base;
+        this.altura = altura;
     }
 
+    //ponemos un constructor:
+    //public Triangulo(){
+    //}
+
     //Ponemos
-    @Override  //sirve para sobreescribir los datos del método abstracto
+    @Override         //sirve para sobreescribir los datos del método abstracto
     public double area (){
         return (getBase()*getAltura())/2;
     }
